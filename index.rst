@@ -14,7 +14,8 @@ GRAV3D is a program library for carrying out forward modelling and inversion of 
 
     Package overview <content/overview>
     Background theory <content/theory>
-    References <https://github.com/krisdavis/GIFcommon/blob/master/reference.bib>
+    Elements <content/elements>    
+    References <references>
 
 ..    File formats <content/elements>
 ..    Running the programs <content/run>
