@@ -4,6 +4,6 @@ References
 ==========
 
  .. bibliography:: reference.bib
-    :all:
+    :cited:
     :style: alpha
     :encoding: latex+latin

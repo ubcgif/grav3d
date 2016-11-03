@@ -1,3 +1,4 @@
+.. _theory:
 
 Background theory
 =================
@@ -64,12 +65,11 @@ where :math:`\beta` is a trade off parameter that controls the relative importan
 
 We next discuss the construction of a model objective function which, when minimized, produces a model that is geophysically interpretable. The objective function gives the flexibility to incorporate as little or as much information as possible. At the very minimum, this function drives the solution towards a reference model :math:`\rho_o` and requires that the model be relatively smooth in the three spatial directions. Here we adopt a right handed Cartesian coordinate system with positive north and positive down. Let the model objective function be
 
-.. _mof_:
+.. _mof:
 .. math::
      \begin{aligned} \phi_m(\rho) &=& \alpha_s\int\limits_V w_s\left\{w(\mathbf{r})[\rho(\mathbf{r})-{\rho}_o] \right\}^2dv + \alpha_x\int\limits_V w_x \left\{\frac{\partial w(\mathbf{r})[\rho(\mathbf{r})-{\rho}_o]}{\partial x}\right\}^2dv \\ \nonumber
      &+& \alpha_y\int\limits_V w_y\left\{\frac{\partial w(\mathbf{r})[\rho(\mathbf{r})-{\rho}_o]}{\partial y}\right\}^2dv +\alpha_z\int\limits_V\ w_z\left\{\frac{\partial w(\mathbf{r})[\rho(\mathbf{r})-{\rho}_o]}{\partial z}\right\}^2dv, \end{aligned}
      :label: mof
-
 
 where the functions :math:`w_s`, :math:`w_x`, :math:`w_y` and :math:`w_z` are spatially dependent, while :math:`\alpha_s`, :math:`\alpha_x`, :math:`\alpha_y` and :math:`\alpha_z` are coefficients, which affect the relative importance of different components in the objective function. The reference model is given as :math:`\rho_o` and :math:`w(\mathbf{r})` is a generalized depth weighting function. The purpose of this function is to counteract the geometrical decay of the sensitivity with the distance from the observation location so that the recovered density contrast is not concentrated near the observation locations. The details of the depth weighting function will be discussed in the next section.
 
@@ -129,6 +129,8 @@ For the inversion of surface data, where :math:`\alpha=2`, :math:`\mathbf{r}_j` 
 
 If the data set involves highly variable observation heights the normal depth weighting function might not be most suitable. Distance weighting used for borehole data may be more appropriate as explained in the next section.
 
+.. _distWeight:
+
 Distance weighting for borehole data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -140,6 +142,8 @@ For data sets that contain borehole measurements, the sensitivities do not have 
 
 where :math:`\alpha=2`, :math:`V_j` is the volume of :math:`j^{th}` cell, :math:`R_{ij}` is the distance between a point within the source volume and the :math:`i^{th}` observation, and :math:`R_o` is a small constant used to ensure that the integral is well-defined (chosen to be a quarter of the smallest cell dimension). This weighting function is also normalized to have a maximum value of unity. For inversion of borehole data, it is necessary to use this more general weighting. This weighting function is also advantageous if surface data with highly variable observation heights are inverted.
 
+
+.. _waveletSection:
 
 Wavelet Compression of Sensitivity Matrix
 -----------------------------------------

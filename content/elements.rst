@@ -26,13 +26,10 @@ There are seven general files which are used in GRAV3D. All are in ASCII text fo
 .. toctree::
     :maxdepth: 1
 
-    Mesh <files/mesh>
+    Mesh <files/meshfile>
     Topography <files/topo>
-    Location <files/loc>
-    Observation <files/obs>
+    Observation/Location <files/obs>
     Model <files/model>
     Weighting <files/weight>
-    Active <files/active>    
-
-
+    Active model <files/model>
 
