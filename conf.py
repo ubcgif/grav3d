@@ -62,7 +62,7 @@ author = u'UBC-GIF'
 # built documents.
 #
 # The short X.Y version.
-version = ''
+version = '5.0'
 # The full version, including alpha/beta/rc tags.
 release = '5.0'
 
