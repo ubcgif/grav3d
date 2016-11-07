@@ -38,8 +38,8 @@ The input parameters for the control file are:
      | =2 for distance weighting.
 
 -  ``alpha``, ``znot``: Parameters defining the depth weighting function: 
-     | When ``iwt=1``, ``alpha`` and ``znot`` are used as :math:`\alpha` and :math:`z_0` to define the *depth* weighting according to equation :eq:`depthw`. 
-     | When ``iwt=2``, ``alpha`` and ``znot`` are used as :math:`\alpha` and :math:`(R_o)` to define the *distance* weighting according to equation :eq:`distw`.
+     | When ``iwt=1``, ``alpha`` and ``znot`` are used as :math:`\alpha` and :math:`z_0` to define the :ref:`depth weighting <depthWeight>`
+     | When ``iwt=2``, ``alpha`` and ``znot`` are used as :math:`\alpha` and :math:`(R_o)` to define the :ref:`distance weighting <distWeight>`
      | **NOTE 1**: If ``null`` is entered on this line (line 6), then the program sets ``alpha=2`` and calculates the value of :math:`z_o` based upon the mesh and data location. This is true for ``iwt=1`` or ``iwt=2``
      | **NOTE 2**: For most inversions, setting this input line to ``null`` is recommended. The option for inputing :math:`\alpha` and :math:`z_o` is provided for experienced users who would like to investigate the effect of the generalized depth weighting for special purposes. The value of :math:`\alpha` should normally be close to 2.0. Smaller values of give rise to weaker weighting as distance increases from the observation locations.
 
@@ -54,4 +54,4 @@ Example of input file
 Output files
 ------------
 
-The program outputs ``x_weight.txt``. A file in the format, which contains weights for each cell, based on equations :eq:`depthw` (x = "depth") and :eq:`distw` (x = "distance"). A log file ``pfweight.log`` is also written.
+The program outputs ``x_weight.txt``. A file in the format, which contains weights for each cell, based on :ref:`depth weighting <depthWeight>` (x = "depth") or :ref:`distance weighting <distWeight>`  (x = "distance"). A log file ``pfweight.log`` is also written.

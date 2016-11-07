@@ -3,7 +3,7 @@
 Weights file
 ============
 
-This file supplies the user-based weights that acts upon the model objective function. Each set of weights correspond to the functions (e.g., :math:`w_x`) given in equation :eq:`mof`. For ease, the weights in geographic coordinates are provided by the user. The following is the file structure is for the weights file:
+This file supplies the user-based weights that acts upon the model objective function. Each set of weights correspond to the functions (e.g., :math:`w_x`) given in the :ref:`model objective function <mof>`. For ease, the weights in geographic coordinates are provided by the user. The following is the file structure is for the weights file:
 
 
 .. figure:: ../../images/weightsInp.png

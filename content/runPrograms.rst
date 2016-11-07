@@ -13,7 +13,7 @@ The software package GRAV3D uses five general codes:
 
 - ``GZPRE3D``: multiplies the sensitivity file by the model to get the predicted data.
 
-This section discusses the use of these codes individually using.
+This section discusses the use of these codes individually.
 
 Introduction
 ------------
