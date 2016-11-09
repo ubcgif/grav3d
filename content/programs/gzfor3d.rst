@@ -12,7 +12,7 @@ and will create the forward modelled data file ``gzfor3d.grv``.
 Input files
 -----------
 
-All files are in ASCII text format - they can be read with any text editor. Input files can have any name the user specifies. Details for the format of each file can be found in Section [Elements]. The files associated with are:
+All files are in ASCII text format - they can be read with any text editor. Input files can have any name the user specifies. Details for the format of each file can be found in :ref:`elements`. The files associated with GZFOR3D are:
 
 - ``mesh.msh``: The 3D :ref:`mesh <meshfile>`.
 

@@ -1,3 +1,5 @@
+.. _elements:
+
 Elements of the program GRAV3D
 ==============================
 

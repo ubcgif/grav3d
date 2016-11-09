@@ -20,7 +20,7 @@ Input files can be any file name. If there are spaces in the path or file name, 
 
 #. ``obs.grv``: Mandatory :ref:`observations file <gravfile>`.
 
-#. ``gzsen3d.mtx``: Mandatory sensitivity matrix from :ref:`gzsen3d`
+#. ``gzinv3d.mtx``: Mandatory sensitivity matrix from :ref:`gzsen3d`
 
 #. ``initial.den``: Optional initial :ref:`model file <modelFile>`. This can be substituted by a value within the input file (see below).
 
@@ -86,15 +86,14 @@ The parameters within the control file are:
    **NOTE:** The four coefficients in line 9 of the control file may be substituted for three corresponding *length scales* :math:`L_x, L_y` and :math:`L_z` and are in units of metres. To understand the meaning of the length scales, consider the ratios :math:`\alpha_x/\alpha_s`, :math:`\alpha_y/\alpha_s` and :math:`\alpha_z/\alpha_s`. They generally define smoothness of the recovered model in each direction. Larger ratios result in smoother models, smaller ratios result in blockier models. The conversion from :math:`\alpha`\'s to length scales can be done by:
 
    .. math::
-
-      \label{eq:lengths}
       L_x = \sqrt{\frac{\alpha_x}{\alpha_s}} ; ~L_y = \sqrt{\frac{\alpha_y}{\alpha_s}} ; ~L_z = \sqrt{\frac{\alpha_z}{\alpha_s}}
+      :label: lengths
 
    When user-defined, it is preferable to have length scales exceed the corresponding cell dimensions. Typically having length scales of four cell widths are a good starting point.
 
-- ``SMOOTH_MOD``: This option was not available in previous versions of the code and can be used to define the reference model in and out of the derivative terms. The options are: ``SMOOTH_MOD_DIF`` (reference model is defined in the derivative terms) and ``SMOOTH_MOD`` (reference model is defined in only the smallest term). See equation :eq:`mof` for details.
+- ``SMOOTH_MOD``: This option was not available in previous versions of the code and can be used to define the reference model in and out of the derivative terms. The options are: ``SMOOTH_MOD_DIF`` (reference model is defined in the derivative terms) and ``SMOOTH_MOD`` (reference model is defined in only the smallest term). See the :ref:`model object function <mof>` section for details.
 
-- ``weights.wt``: Name of the :ref:`weights file <weightsFile>` containing weighting matrices. If is entered, default values of unity are used.
+- ``weights.wt``: Name of the :ref:`weights file <weightsFile>` containing weighting matrices. If ``null`` is entered, default values of unity are used (no extra weighting).
 
 Example of control file
 ~~~~~~~~~~~~~~~~~~~~~~~

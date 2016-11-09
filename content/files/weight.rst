@@ -13,7 +13,7 @@ This file supplies the user-based weights that acts upon the model objective fun
 
 Parameter definitions:
 
-- W.S\ :math:`_{i,j,k}`: Cell weights for the smallest model component (equation :eq:mof).
+- W.S\ :math:`_{i,j,k}`: Cell weights for the smallest model component in the  :ref:`model objective function <mof>`.
 
 - W.E\ :math:`_{i,j,k}`: Cell weights for the interface perpendicular to the easting direction.
 
