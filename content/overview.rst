@@ -122,7 +122,7 @@ Two additional notes about installation:
 -  A Message Pass Interface (MPI) version is available for Linux upon
    and the installation instructions will accompany the code.
 
-Highlights of changes from version 3.2
+Highlights of changes from version 5.0
 --------------------------------------
 
 The principal upgrades, described below, allow the new code to take advantage of current multi-core computers and also provide greater flexibility to incorporate the geological information.
