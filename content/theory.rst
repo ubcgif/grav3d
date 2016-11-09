@@ -99,6 +99,15 @@ where :math:`\mathbf{\rho}` and :math:`\mathbf{\rho}_o` are :math:`M`-length vec
 
 In the previous two equations, the individual matrices :math:`\mathbf{W}_s`, :math:`\mathbf{W}_x`, :math:`\mathbf{W}_y`, and :math:`\mathbf{W}_z` are straight-forwardly calculated once the model mesh and the weighting functions :math:`w(\mathbf{r})` and :math:`w_s` , :math:`w_x`, :math:`w_y`, :math:`w_z` are defined. The cumulative matrix :math:`\mathbf{W}_m^T\mathbf{W}_m` is then formed for the chosen configuration.
 
+In addition, more realistic geologic-looking models can often be obtained by introducing various levels of sharpness and compactness into the inverted results. This is accomplished by using different norms in the model objective function. Minimizing an :math:`l_p`-norm of a model, as :math:`p` reduces from two to zero, generates a result that goes from smooth to blocky to compact. Our generalized norms, which we refer to as :math:`l_p, l_q`, allow various degrees of smoothness and compactness on different components of the model objective function:
+
+.. _lplqMOF:
+.. math::
+    \phi_m(\mathbf{\rho}) = \left \| \mathbf{W}_s(\mathbf{\rho}-\mathbf{\rho}_o)\right \|^p + \left \| \mathbf{W}_i(\mathbf{\rho})\right \|^{q_i} \quad (i=x,y,z)
+    :label: moflplq
+
+The above equation is solved through an iteratively re-weighted least-squares (IRLS) approach. The inversion is solved to the :math:`l_2` measure and then the model objective function is changed. The :math:`p` norm promotes sparseness through the model. The :math:`q_i` norms promotes blockiness (or smoothness for :math:`q_i=2`) in each principal direction. In equation :eq:`moflplq`, the depth/distance weighting is absorbed into the :math:`\mathbf{W}` matrices. 
+
 The next step in setting up the inversion is to define a misfit measure. Here we use the :math:`l_2`-norm measure
 
 .. _phid_:

@@ -42,13 +42,16 @@ The input parameters for the control file are:
 
 - ``Diag``: Option to output (``Diag=1``) or not output (``Diag=0``) diagnostic files. These files are: (1) the predicted data for a model of :math:`\rho=0.1` with the wavelet compressed sensitivity, (2) the predicted data for a model of :math:`\rho=0.1` with the full sensitivity, (3) the averaged sensitivity in each cell based on the wavelet compression. An extra line in the log file is also written giving the user the achieved reconstruction error (e.g. ``eps`` when ``itol=1`` from above).
 
+- ``Scale``: Option to scale the senstivities (``Scale=1``) or the model objective function (``Scale=0``) by the depth weighting function. This value **must be 0** to scale the sensitivities through the model objective function when the **compact or blocky model norms** are chosen. If scaling the senstivity is chosen, the inversion code will output an error at the beginning. This value is optional and will be set to ``Scale=0`` if the line is not given.
+
+     **NOTE**: Emperical testing has shown that the results are consistent with either option. Setting ``scale=0`` will allow the user to run both a smooth and blocky inversion without having to re-compute the sensitivities.
+
 Example of input file
 ~~~~~~~~~~~~~~~~~~~~~
 
-
 .. figure:: ../../images/gzsen3dEx.png
      :align: center
-     :figwidth: 50% 
+     :figwidth: 75% 
 
 
 Output files

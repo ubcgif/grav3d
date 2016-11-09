@@ -6,7 +6,7 @@
 GRAV3D package
 ==============
 
-GRAV3D is a program library for carrying out forward modelling and inversion of surface, borehole, and airborne gravity data in 3D. The contents of this manual are as follows:
+GRAV3D v6.0 is a program library for carrying out forward modelling and inversion of surface, borehole, and airborne gravity data in 3D. The contents of this manual are as follows:
 
 .. toctree::
     :numbered:
@@ -16,12 +16,9 @@ GRAV3D is a program library for carrying out forward modelling and inversion of 
     Background theory <content/theory>
     Elements <content/elements>    
     Running the programs <content/runPrograms>
-    Examples <content/examples>    
     References <references>
     
-
-..    File formats <content/elements>
-..    Running the programs <content/run>
+..  Need to run examples: maybe nutcracker?
 ..    Examples <content/examples>
 
 

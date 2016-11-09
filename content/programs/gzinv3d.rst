@@ -95,15 +95,28 @@ The parameters within the control file are:
 
 - ``weights.wt``: Name of the :ref:`weights file <weightsFile>` containing weighting matrices. If ``null`` is entered, default values of unity are used (no extra weighting).
 
+- ``VALUE P Qx Qy Qz``: The Lp/Lq exponents for the :ref:`model objective function <lplqMOF>`. The P is for the smallest model component and the Qs are for the spatial components. This line is optional and the L2 norm will be assumed for inputs of ``null`` or if the file ends on the previous line. 
+
+- ``scale,eps,epsGrad``: The scaling between Lp and Lq components in range :math:`[0,1]`. ``eps`` is an effective zero for the model values. ``epsGrad`` is an effective zero value for the change in model values spatially (i.e., derivatives). The program will calculate these zeros based on a single standard deviation of the L2 model if ``null`` is given with no extra scaling between Lp and Lq (``scale = 0.5``). **Note**: This line is optional and is only required if the LpLq constants are given or MOF derivatives below. 
+
+- ``mof.wt``: This input is currently disabled because of the upgrade to the model objective function. Use ``null`` or end the file prematurely.
+
+
 Example of control file
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Below is an example of a control file with comments:
+Below is an example of a control file with comments for an L2 inversion.
 
 .. figure:: ../../images/gzinv3dEx.png
      :align: center
      :figwidth: 75%
 
+
+Below is an example of an input file for an Lp/Lq file. The program will try to find a sparse model (Lp=0) with smooth sides (Lqx=Lqy=Lqz=2) and fit the data misfit to within 5% of the desired misfit.
+
+.. figure:: ../../images/gzinv3dLpEx.png
+     :align: center
+     :figwidth: 75% 
 
 
 Output files
