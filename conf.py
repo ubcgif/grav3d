@@ -54,7 +54,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'grav3d'
-copyright = u'2015, UBC-GIF'
+copyright = u'2015-2017, UBC-GIF'
 author = u'UBC-GIF'
 
 # The version info for the project you're documenting, acts as replacement for
