@@ -30,5 +30,5 @@ The full examples are parse into 5 sections:
 A legacy example using the Grav3d package can be found here:
 
 .. toctree::
-	Legacy example <example/old_example>
+	Legacy examples <example/old_example>
 
