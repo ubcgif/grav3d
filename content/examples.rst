@@ -19,7 +19,7 @@ Here, the program libraries for Grav3d v6.0 will be used to:
 
 Zip folders containing all necessary files can be downloaded here:
 
-    .. - `Files for grav3d v6 example <https://github.com/ubcgif/grav3d/raw/master/assets/grav3d_example.zip>`__
+    - `Files for grav3d v6 example <https://github.com/ubcgif/grav3d/raw/master/assets/grav3d_example.zip>`__
 
 
 The full example is parsed into 5 sections:
