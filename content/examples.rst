@@ -23,7 +23,7 @@ The full examples are parse into 5 sections:
     Create tensor model <example/create_model>
     Forward modeling <example/fwd>
     Weights <example/weights>
-    Generate sensitivity matrix <example/sensitivities>
+    Generate sensitivity matrix <example/sensitivity>
     Inversion <example/inv>
 
 
