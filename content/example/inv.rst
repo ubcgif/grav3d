@@ -5,7 +5,7 @@
 Inversion
 =========
 
-Here the code **gzinv3d_v60.exe** invert synthetic gravity anomaly data to recover a density contrast model. We perform both a smooth and a sparse inversion. We use the same data that were computed in :ref:`forward modeling example <example_fwd>`. Gaussian noise were added to these data with a standard deviation of 5e-4 mgal.
+Here the code **gzinv3d_v60.exe** invert synthetic gravity anomaly data to recover a density contrast model. We perform both a smooth and a sparse inversion. We use the same data that were computed in :ref:`forward modeling example <example_fwd>`. Gaussian noise were added to these data with a standard deviation of 5e-4 mgal. Uncertainties of 5e-4 mgal were assigned to all data
 
 Before running this example, you may want to do the following:
 
@@ -14,7 +14,7 @@ Before running this example, you may want to do the following:
 
 
 
-.. important:: Since the sensitivities output by **gzsen3d_v50.exe** produce a large file, we have not provided them in the zip file. You need to complete the :ref:`compute sensitivities <example_sensitivity>` example to run the inversion.
+.. important:: Since the sensitivities output by **gzsen3d_v60.exe** produce a large file, we have not provided them in the zip file. You need to complete the :ref:`compute sensitivities <example_sensitivity>` example to run the inversion.
 
 
 Smooth Inversion
@@ -28,7 +28,7 @@ For standard L2 inversion, we use the input file **inv_L2.inp** and the supporti
      :width: 700
 
 
-The algorithm reaches an optimum model after 5 iterations. Least-squares gravity inversion 
+The algorithm reaches an optimum model after 5 iterations. Least-squares gravity inversion will generally place structures at the approprate locations but will underestimate the amplitude of density contrast. 
 
 
 .. figure:: images/model_L2.png
@@ -48,7 +48,7 @@ For sparse inversion, we use the input file **inv_sparse.inp** and the supportin
      :width: 700
 
 
-The inversion was set to recover a model that is more compact. In this case the inversion recovered 
+The inversion was set to recover a model that is more compact. By forcing the model to be compact, we recover a structure who density contrast of much closer to the true value of 0.1 g/cc. 
 
 
 .. figure:: images/model_sparse.png
