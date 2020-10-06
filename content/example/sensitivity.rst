@@ -1,5 +1,8 @@
 .. _example_sensitivity:
 
+.. note:: This example has been developed to demonstrate functionality specific to v6.0. The example can be completed using v5.0, however some functionality may not exist in v5.0 and the format of certain input files may differ slightly.
+
+
 Computing Sensitivities
 =======================
 
@@ -7,9 +10,8 @@ Here the code **gzsen3d_v60.exe** is used to compute and output the sensitivitie
 
 Before running this example, you may want to do the following:
 
-	.. - `Download and open the zip folder containing the entire grav3d example <https://github.com/ubcgif/grav3d/raw/master/assets/grav3d_example.zip>`__ (if not done already)
-	.. - Learn how to run :ref:`blk3cell<grav3d_model>`
-	.. - Learn the format of the input files :ref:`blk3cell.inp<grav3d_input_model>`
+	- `Download and open the zip folder containing the entire grav3d example <https://github.com/ubcgif/grav3d/raw/master/assets/grav3d_example.zip>`__ (if not done already)
+	- Learn how to :ref:`compute sensitivities and learn the format of the input files <gzsen3d>`
 
 
 Smooth Inversion

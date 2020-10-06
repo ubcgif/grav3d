@@ -1,9 +1,14 @@
 .. _example:
 
+
+.. note:: A new example has been developed for demonstrating functionality specific to v6.0. The example can be completed using v5.0, however some functionality may not exist in v5.0 and the format of certain input files may differ slightly.
+
 Examples
 ========
 
-Here, the program libraries for Grav3d will be used to:
+**Grav3d v6.0**
+
+Here, the program libraries for Grav3d v6.0 will be used to:
 
     - define a density contrast model on a tensor mesh
     - predict gravity anomaly data for a synthetic density contrast model
@@ -11,14 +16,16 @@ Here, the program libraries for Grav3d will be used to:
     - compute and store the sensitivity matrix
     - invert gravity anomaly data to recover a density contrast model
 
+
 Zip folders containing all necessary files can be downloaded here:
 
-    .. - `Files for example using E3D version 1 <https://github.com/ubcgif/E3D/raw/e3dinv/assets/E3D_manual_ver1.zip>`__
+    .. - `Files for grav3d v6 example <https://github.com/ubcgif/grav3d/raw/master/assets/grav3d_example.zip>`__
 
-The full examples are parse into 5 sections:
+
+The full example is parsed into 5 sections:
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     Create tensor model <example/create_model>
     Forward modeling <example/fwd>
@@ -27,7 +34,9 @@ The full examples are parse into 5 sections:
     Inversion <example/inv>
 
 
-A legacy example using the Grav3d package can be found here:
+**Grav3d v5.0**
+
+A legacy example using the Grav3d v5.0 package can be found here:
 
 .. toctree::
 	Legacy examples <example/old_example>

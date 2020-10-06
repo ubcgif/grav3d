@@ -1,5 +1,7 @@
 .. _example_inv:
 
+.. note:: This example has been developed to demonstrate functionality specific to v6.0. The example can be completed using v5.0, however some functionality may not exist in v5.0 and the format of certain input files may differ slightly.
+
 Inversion
 =========
 
@@ -7,9 +9,9 @@ Here the code **gzinv3d_v60.exe** invert synthetic gravity anomaly data to recov
 
 Before running this example, you may want to do the following:
 
-	.. - `Download and open the zip folder containing the entire grav3d example <https://github.com/ubcgif/grav3d/raw/master/assets/grav3d_example.zip>`__ (if not done already)
-	.. - Learn how to run :ref:`blk3cell<grav3d_model>`
-	.. - Learn the format of the input files :ref:`blk3cell.inp<grav3d_input_model>`
+     - `Download and open the zip folder containing the entire grav3d example <https://github.com/ubcgif/grav3d/raw/master/assets/grav3d_example.zip>`__ (if not done already)
+     - Learn how to :ref:`run gzinv3d_v60 and learn the format of the input files <gzinv3d>`
+
 
 
 .. important:: Since the sensitivities output by **gzsen3d_v50.exe** produce a large file, we have not provided them in the zip file. You need to complete the :ref:`compute sensitivities <example_sensitivity>` example to run the inversion.

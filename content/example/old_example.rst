@@ -9,7 +9,7 @@ Forward modelling
 
 The surface data set consists of 2,091 evenly gridded data 60 meters Easting by 75 meters Northing (see :numref:`model`).
 
-.. figure:: ../images/model.png
+.. figure:: ../../images/model.png
      :align: center
      :figwidth: 75% 
      :name: model
@@ -17,7 +17,7 @@ The surface data set consists of 2,091 evenly gridded data 60 meters Easting by 
      The density model used to generate synthetic data in three vertical boreholes and on the surface (locations shown in white). The anomalous block is 500 m\ :math:`^3` and has a density contrast of 0.7 g/cm\ :math:`^3`. First, the surface data alone will inverted. Then, data from the two boreholes outside of the anomalous block will be added to the surface data and modelled and inverted. Finally, data from all three boreholes as well as the surface data will be inverted.
 
 
-.. figure:: ../images/surfdata.png
+.. figure:: ../../images/surfdata.png
      :align: center
      :figwidth: 75% 
      :name: surfdata
@@ -35,7 +35,7 @@ We next simulated the borehole data. The borehole data are calculated in three v
 
 The borehole dataset has been contaminated with Gaussian noise with a standard deviation of 2% and a floor of 0.01 mGal. The noisy surface data are shown in the right panel of :numref:`surfdata`. :numref:`bhdata` shows the accurate and noisy borehole data. The two datasets are combined to create the "observed" data for the inversion examples in the next section.
 
-.. figure:: ../images/bhdata.png
+.. figure:: ../../images/bhdata.png
      :align: center
      :figwidth: 75% 
      :name: bhdata
@@ -53,12 +53,12 @@ Default parameters
 
 First, the distance weighting function is calculated with :ref:`pfweight`. Distance weighting was is chosen for consistency between the surface only and surface and borehole inversion solutions (borehole data require distance weighting). The input for the weighting function code is shown below. An example of the created log file is presented in :numref:`pfwghtLog`. 
 
-.. figure:: ../images/exWeightInp.png
+.. figure:: ../../images/exWeightInp.png
    :align: center
    :figwidth: 50%
 
 
-.. figure:: ../images/pfweightsLog.png
+.. figure:: ../../images/pfweightsLog.png
    :align: center
    :figwidth: 75%
    :name: pfwghtLog
@@ -68,12 +68,12 @@ First, the distance weighting function is calculated with :ref:`pfweight`. Dista
 
 Next, the sensitivity matrix is calculated with :ref:`gzsen3d` . The default wavelet compression parameters are used (``daub2`` with 5% reconstruction error (``eps=0.05``). We also choose *not* to output diagnostic parameters, although these are discussed in the :ref:`Wavelet diagnostic output <waveletExample>` section. With this scenario chosen, outputs and (these files will be over-written if the program has been run in the same folder more than once without re-naming them). The former file gives the user information about the sensitivity calculation such as compression ratio with the wavelet transform. The latter file will be required during the inversion process. The sensitivity will only have to be re-run if the mesh or data locations are changed. Changing the standard deviations does not require a next ``.mtx`` file. The log file from the sensitivity calculation is shown in :numref:`senslog`. The input file for the sensitivity calcuation is shown below.
 
-.. figure:: ../images/exSenInp.png
+.. figure:: ../../images/exSenInp.png
    :align: center
    :figwidth: 50%
 
 
-.. figure:: ../images/sensLog.png
+.. figure:: ../../images/sensLog.png
    :align: center
    :figwidth: 75%
    :name: sensLog
@@ -83,7 +83,7 @@ Next, the sensitivity matrix is calculated with :ref:`gzsen3d` . The default wav
 
 Once the matrix file is created, the inversion can be run by :ref:`gzinv3d` with a general input file. The control file example is provided below. The bounds are set to keep the model between ``-10`` and ``10`` g/cc (basically creating an "un-bounded" inversion)
 
-.. figure:: ../images/exInvInp.png
+.. figure:: ../../images/exInvInp.png
    :align: center
    :figwidth: 50%
 
@@ -92,7 +92,7 @@ The inversion converges in eight iterations. :numref:`convergence` shows the con
 
 An example log file created by :ref:`gzinv3d` within this example set (surface data only) is shown in :numref:`invlog`. The file gives the input parameters and general information for every iteration such as the data misfit and iteration CPU time. A developers log (``gzinv3d.out``) is also written (:numref:`invout`). This file contains detailed information for every iteration including the beta parameter, data misfit, model norm and its components, total objective function, number of conjugate gradient iterations, and the number of truncated cells. The latter is the amount of cells that are at or beyond the bounds and are not included in the minimization with the projected gradient. In this case, it would be cells greater than or equal to 10.0 and less than or equal to -10.0.
 
-.. figure:: ../images/convergence.png
+.. figure:: ../../images/convergence.png
    :align: center
    :figwidth: 75%
    :name: convergence
@@ -100,7 +100,7 @@ An example log file created by :ref:`gzinv3d` within this example set (surface d
    The convergence curve for for the inversion of surface data. The 0\ :math:`^{th}` iteration is the initial misfit. The target misfit is approximately 2,100 where the inversion stops.
 
 
-.. figure:: ../images/recData.png
+.. figure:: ../../images/recData.png
    :align: center
    :figwidth: 75%
    :name: recData
@@ -108,7 +108,7 @@ An example log file created by :ref:`gzinv3d` within this example set (surface d
    The observed surface data (left) and the surface data created from the recovered model (right). The data are on the same colour scale.
 
 
-.. figure:: ../images/invLog.png
+.. figure:: ../../images/invLog.png
    :align: center
    :figwidth: 50%
    :name: invLog
@@ -116,7 +116,7 @@ An example log file created by :ref:`gzinv3d` within this example set (surface d
    The inversion log created by ``gzinv3d``. As with the sensitivity log file, the top portion of the file gives the input parameters so the results can be reproduced. The bottom gives details for each iteration such as the trade-off parameter, data misfit, and CPU time.
 
 
-.. figure:: ../images/invout.png
+.. figure:: ../../images/invout.png
    :align: center
    :figwidth: 75% 
    :name: invout
@@ -126,7 +126,7 @@ An example log file created by :ref:`gzinv3d` within this example set (surface d
 
 A slice of the recovered model through the centre of the anomalous body is presented in :numref:`addBorehole` (top). The anomaly has small amplitude and is smoothed. The two boreholes that do not intersect the anomaly are then added. The data are inverted with the same parameters as previous given for the surface-only example and achieves the appropriate data misfit. The recovered model is shown in :numref:`addBorehole` (middle). The anomalous body is tighter and a bit more constrained with the addition of subsurface data. Finally, the third borehole that intersects the anomaly is added to the observed data. An interesting observation of the recovered model (:numref:`addBorehole` ; bottom) is the lack of density contrast where the borehole is physically located.
 
-.. figure:: ../images/addBorehole.png
+.. figure:: ../../images/addBorehole.png
    :align: center
    :figwidth: 75% 
    :name: addBorehole
@@ -146,14 +146,14 @@ __________________
 
 Distance weighting is utilized to avoid placing susceptible cells near the observation locations where the mesh has a higher sensitivity and can drive the final solution. We therefore manually change the :math:`R_o` (via the :ref:`distance weighting <distWeight>` function) in the input file. We change it from the default value of :math:`1/4` of a cell to 100 - much larger than what is needed. Since the values are then normalized, this will allow susceptible material near the borehole locations. The :math:`\alpha` value should be 2.0 due to the field decay to a squared power. The sensitivity and inversion input files stay the same. The weighting input file for this example is
 
-.. figure:: ../images/exPFdist.png
+.. figure:: ../../images/exPFdist.png
     :align: center
     :figwidth: 50% 
 
 
 The inversion is run with all three boreholes and surface data. A slice of the recovered model is shown in :numref:`allro`. The recovered model has a single anomaly as desired. The anomaly is near the true density contrast (0.7 g/cm\ :math:`3`) and has a block-like shape to it. A by-product of using this weighting is that the algorithm is able to place density not only near the borehole locations, but also near surface observations. To improve upon the results, we examine the use of the reference model with this weighting in order to centralize the anomalous density contrast.
 
-.. figure:: ../images/allBlindc.png
+.. figure:: ../../images/allBlindc.png
     :align: center
     :figwidth: 75%
     :name: allro
@@ -171,7 +171,7 @@ The centre borehole intersects the anomaly so we assume that we know the true mo
 The input file for the inversion with the reference model throughout model objective function is shown below. The initial model is the same as the reference model and the choice ``SMOOTH_MOD_DIF`` is invoked in order to place the reference model in the spatial derivatives.
 
 
-.. figure:: ../images/exInvRefInp.png
+.. figure:: ../../images/exInvRefInp.png
    :align: center
    :figwidth: 50%
 
@@ -181,7 +181,7 @@ The recovered model is found in :numref:`refModel` (middle). There is a single a
 
 Next, the input file for the inversion is changed so that the option ``SMOOTH_MOD`` is used in order to place the reference model only in the smallest component of the model objective function. A cross section of the recovered model with this option is presented in :numref:`refModel` (bottom). This time the recovered anomaly is much more homogeneous and is closer to the true model throughout the body, although still smaller in amplitude. The solution is similar to just the distance weighting, though it recovers higher density contrasts with a large negative anomaly below.
 
-.. figure:: ../images/addReferenceModel.png
+.. figure:: ../../images/addReferenceModel.png
     :align: center
     :figwidth: 75%
     :name: refModel
@@ -199,7 +199,7 @@ ____________
 
 To be able to appropriate bound the model to reasonable values, we examine the susceptibility given by the borehole information. The bound model file is two columns and requires a lower and upper bound, respectively. For the lower bound, we set the model to zero everywhere but the intersection of the anomaly with the centre borehole. The true model is observed here, so we set the bounds in this region to 0.699 - just below the 0.7 g/cm\ :math:`^3` of the anomalous body (:numref:`addBounds` ; top). The upper bounds are 1 everywhere (e.g., positivity based on the borehole) but in the locations of the zero density contrast found in the boreholes. This model can be found in :numref:`addBounds` (middle). These two models create the bounds file. We use the same reference model from the soft constraints section. The reference model is is only incorporated in the smallest model component of the model objective function. The input file for the inversion with bounds is
 
-.. figure:: ../images/invBndInp.png
+.. figure:: ../../images/invBndInp.png
     :align: center
     :figwidth: 50%
 
@@ -207,7 +207,7 @@ To be able to appropriate bound the model to reasonable values, we examine the s
 and a cross section of the recovered model is found in :numref:`addBounds` (bottom). The bounds force the model to the correct 0.7 g/cm\ :math:`^3` values where the centre borehole intersects the anomalous body, to zero where the boreholes do not intersect any anomalous density, and allows the rest of the model to change as necessary at and above zero. The result is large values in the centre of the anomaly with smoothly decaying amplitudes towards the outsides of the body. The shape is correctly recovered at depth and the large negative anomaly disappears.
 
 
-.. figure:: ../images/addBounds.png
+.. figure:: ../../images/addBounds.png
     :align: center
     :figwidth: 75%
     :name: addBounds
@@ -221,13 +221,13 @@ _____________________
 
 An added functionality of :ref:`gzinv3d` is the ability to set cells to a prescribed value and not incorporated them directly into the inversion. For this example, the model cells in the boreholes are set to inactive. This means they will be stay the value given in the initial model and will not be part of the model objective function (they will contribute to the produced data of the solution). For this example, we set the active cells with values of 1 near the boreholes where the inversion will solve for density contrast. The cells intersecting the boreholes where the density is known is set to :math:`-1` in order to influence the model objective function, yet set the cell values. The cells outside the region of interest and that we know have no anomalous density contrast are set to :math:`0` (also inactive) and are not included within the inversion. :numref:`activeCells` (top) is a cross section of the active cell model. The reference model determines the cell values within the inactive region so the file ``ref.den`` is used. For this example, we keep positivity by simply using a lower bound of zero and an upper bound of 1 g/cm\ :math:`^3`. An initial model using the reference model is also set. The inversion input file for this example is
 
-.. figure:: ../images/invActInp.png
+.. figure:: ../../images/invActInp.png
     :align: center
     :figwidth: 50%
 
 The recovered model is shown in :numref:`activeCells` (bottom). The centre of the anomaly has the expected value of 0.7 (it was not part of the inversion) and the surrounding density contrast expands to the region of the true anomalous body continuously due to keeping the reference model in the smallest model component of the model objective function. Active cells can improve the inversion when prior information is available.
 
-.. figure:: ../images/addActiveCells.png
+.. figure:: ../../images/addActiveCells.png
     :align: center
     :figwidth: 75%
     :name: activeCells
@@ -247,7 +247,7 @@ Running the diagnostic test tool
 
 In order to run the diagnostic test via :ref:`gzsen3d`, a ``1`` is given on the bottom line of the input file. The weighting code and run prior to the sensitivity and the sensitivity matrix output can be used (as if the test was not run) in :ref:`gzinv3d`. It should be noted that the testing can require up to twice the CPU time than running the sensitivity matrix calculation alone. Once the diagnostic testing begins, the user may decide to stop the code. In that case, the testing files are not output yet the matrix file has been written and the inversion process can proceed. An example input file for the sensitivity calculation with testing is
 
-.. figure:: ../images/invDiagInp.png
+.. figure:: ../../images/invDiagInp.png
     :align: center
     :figwidth: 50%
 
@@ -258,7 +258,7 @@ The standard outputs of running are the sensitivity matrix file (``gzinv3d.mtx``
 
 Examining how the two average sensitivity models differ can give insight on how well the wavelet compression has performed. The general shape should be the same, but large jumps in cell size can create large differences, which will be observed with the two outputs. :numref:`compComp` (top) shows a cross-section of the uncompressed sensitivity average for the block example given in this manual. The same cross-section for the compressed average sensitivity for a 5% reconstruction error is presented in :numref:`compComp` (middle). In general, the compression shows good accuracy. The difference between the two models is given in :numref:`compComp` (bottom) for reference. All of the pictures are shown in log scale.
 
-.. figure:: ../images/compressionModels.png
+.. figure:: ../../images/compressionModels.png
     :align: center
     :figwidth: 75%
     :name: compComp
@@ -275,7 +275,7 @@ Recovered model-based diagnostic test
 Users of the this software package often are curious how the wavelet transform is affecting the predicted data. Although the diagnostic test does this calculation on a constant model of 0.1, this test is actually easy to perform once the inversion code has a solution. The ``gzinv3d_xxx.pre`` is the predicted data from the compressed sensitivity (for the "xxx" iteration) and can also be calculated with the code :ref:`gzpre3d` given a file and a recovered model. To obtain the predicted data for an uncompressed sensitivity matrix, run :ref:`gzfor3d` on the recovered model, ``gzinv3d_xxx.den``. The difference between the generated data sets will show how the wavelet compression is affecting the final data. Large discrepancies in the data may suggest the use of a smaller reconstruction error given on the ``eps`` line of the sensitivity input file. An example is shown using the surface-only data set. The two data sets for the uncompressed, compressed sensitivity matrix, and their difference is respectively shown in :numref:`dataComp`. The maximum difference between the two data sets less than is 0.01 mGal.
 
 
-.. figure:: ../images/compressionData.png
+.. figure:: ../../images/compressionData.png
     :align: center
     :figwidth: 100%
     :name: dataComp
