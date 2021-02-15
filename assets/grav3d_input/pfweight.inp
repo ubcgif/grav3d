@@ -1,0 +1,6 @@
+GRAV                  ! MAG | GRAV | GG
+mesh.txt              ! tensor mesh
+dobs.grv              ! observations/survey file
+null                  ! topography file | null
+2                     ! 1=depth weighting | 2=distance weighting
+null                  ! beta, z0 | null

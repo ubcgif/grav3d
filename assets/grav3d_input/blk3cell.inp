@@ -1,0 +1,3 @@
+0.0                                    ! background density
+1                                      ! number of blocks
+-100 100 -100 100 -200 -400 0.1        ! e1 e2 n1 n2 z1 z2 val

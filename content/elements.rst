@@ -31,7 +31,6 @@ There are seven general files which are used in GRAV3D. All are in ASCII text fo
     Mesh <files/meshfile>
     Topography <files/topo>
     Observation/Location <files/obs>
-    Model <files/model>
+    Models <files/modelfile>
     Weighting <files/weight>
-    Active model <files/model>
 

@@ -1,0 +1,15 @@
+1                                      ! mode: 1 | 2
+1.0 0.02                               ! par, tolc
+dobs.grv                               ! observations file
+../sensitivity_sparse/gzinv3d.mtx      ! mtx file
+VALUE 0.0001                           ! initial model
+VALUE 0                                ! reference model
+null                                   ! active cells model | null
+VALUE -10.                             ! lower bound
+VALUE 10.                              ! upper bound
+1e-4 1. 1. 1.                          ! alphaS alphaE alphaN alphaZ | null
+SMOOTH_MOD                             ! SMOOTH_MOD | SMOOTH_MOD_DIF
+null                                   ! depth or distance weights | null
+VALUE 0 2 2 2                          ! ps px py pz | null
+0.5 1e-3 1e-3                          ! Lq scaling [0,1], zeroS, zeroXYZ | null
+null                                   ! MOF derivatives | null

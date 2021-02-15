@@ -16,6 +16,8 @@ import sys
 import os
 import shlex
 
+sys.path.append(os.path.abspath('./_ext'))
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -32,7 +34,10 @@ import shlex
 # ones.
 extensions = [
     'sphinx.ext.mathjax',
-    'sphinxcontrib.bibtex'
+    'sphinxcontrib.bibtex',
+    'edit_on_github',
+    # 'purpose',
+    # 'example',
 ]
 
 # Number figures
@@ -54,7 +59,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'grav3d'
-copyright = u'2015, UBC-GIF'
+copyright = u'2015-2017, UBC-GIF'
 author = u'UBC-GIF'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -109,6 +114,12 @@ pygments_style = 'sphinx'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
+
+# -- Edit on Github Extension ---------------------------------------------
+
+edit_on_github_project = 'ubcgif/grav3d'
+edit_on_github_branch = 'master'
+check_meta = False
 
 
 # -- Options for HTML output ----------------------------------------------

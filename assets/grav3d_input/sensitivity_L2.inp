@@ -1,0 +1,8 @@
+mesh.txt             ! mesh file
+dobs.grv             ! data file
+null                 ! topography
+distance_weight.txt  ! pf weights file name
+daub2                ! wavelet: daubx, symmx, NONE
+1  0.05              ! itol, eps | null
+0                    ! 0-not output, 1-output diagnostic files
+1                    ! 0-scale MOF,  1-scale sens (optional)
