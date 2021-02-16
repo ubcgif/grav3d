@@ -1,52 +1,45 @@
 .. _gravfile:
 
-Observations file
-=================
+Observations/Survey File
+========================
 
-This file is used to specify the observed gravity anomalies with estimated standard deviation. The output of the forward modelling program GZFOR3D has the same structure except that the column of standard deviations for the error is omitted. Lines starting with ! are comments. The following is the GIF-formatted file structure of a gravity observations file:
+Here, we demonstrate the format of the survey, predicted data and observations files that are compatible with **gzfor3d.exe** and **gzinv3d_60.exe**. For forward modeling, the survey file will contain the observation locations. In addition to this information, the predicted data file will have an additional column containing the data predicted for a given model. Observation files will contain a data column as well as a column for the uncertainties on the data.
+
+The general format for data files compatible with **gzfor3d.exe** and **gzinv3d_60.exe** is as follows:
 
 .. figure:: ../../images/gravObs.png
     :align: center
-    :figwidth: 50%
+    :width: 500
 
-Parameter definitions:
+Parameter Definitions
+^^^^^^^^^^^^^^^^^^^^^
 
--  ndat: Number of observations.
+    - *!:* Any line beginning with a ! is ignored an represents a comment line.
 
--  E, N, ELEV: Easting, northing and elevation of the observation, measured in
-   meters. Elevation should be above the topography for surface data,
-   and below the topography for borehole data. The observation locations
-   can be listed in any order.
+    - **ndat:** Number of observation locations.
 
--  Grav :math:`_i`: Anomalous gravity of ith datum measured in mGal.
+    - **E, N, ELEV:** Easting, Northing and elevation for each observation location in meters. Elevation should be above the topography for surface data, and below the topography for borehole data. The observation locations can be listed in any order.
 
--  Err :math:`_i`: Standard deviation of Grav\ :math:`_n`. This represents the absolute
-   error. It must be positive and non-zero.
+	-  Grav :math:`_i`: Anomalous gravity of ith datum measured in mGal.
 
-**NOTE:** It should be noted that the data are **extracted anomalies**, which are derived by removing the regional from the field measurements. Furthermore, the inversion program assumes that the anomalies are produced by a density contrast distribution in g/cm :math:`^3` with mesh cells in meters. Therefore, it is crucial that the data be prepared in ``mGal``.
+	-  :math:`\mathbf{Grav_n}`: Gravity anomaly data in mgal. This column is only present in *predicted data* and *observed data* files.
+
+    -  :math:`\mathbf{Err_n}`: Standard deviation for the error on the corresponding datum (i.e. uncertainty). This represents the absolute error. It must be positive and non-zero. This column is only required in *observed data* files.
 
 
-.. _gravPreFile:
 
-Predicted data file
--------------------
-
-The predicted data file is the exact same format as above, but omitting the uncertainty column. The forward modelling and inversion code will output the predicted data in this format.
-
-.. _gravLocFile:
-
-Locations file
---------------
-
-The locations file is the exact same format as above, but omitting the gravity data and uncertainty columns. The forward modelling code will read in locations even when the gravity anomaly (and uncertainties) are given.
+.. important:: It should be noted that the data are **extracted anomalies**, which are derived by removing the regional from the field measurements. Furthermore, the inversion program assumes that the anomalies are produced by a density contrast distribution in g/cm :math:`^3` with mesh cells in meters. Therefore, it is crucial that the data be prepared in ``mGal``.
 
 
 Example 
 -------
 
+Below is an observations file. Notice that it has columns for observed data and uncertainties.
+
+
 .. figure:: ../../images/gravObsEx.png
     :align: center
-    :figwidth: 50%
+    :width: 500
 
 
 

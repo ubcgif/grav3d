@@ -1,29 +1,33 @@
-.. _gzfor3d:
+.. _grav3d_fwd:
 
-GZFOR3D
-=======
+Forward Modeling
+================
 
-This program performs forward modelling. Command line usage:
+The program **gzfor3d.exe** performs the 3D forward modelling of gravity data for a density contrast model defined on a tensor mesh.
 
-``gzfor3d mesh.msh obs.loc model.den [topo.dat]``
+Running the Program
+^^^^^^^^^^^^^^^^^^^
 
-and will create the forward modelled data file ``gzfor3d.grv``.
+To run the executable, open a command window. In order, enter the path to the *gzfor3d* executable, the :ref:`tensor mesh file <meshfile>`, the :ref:`survey file <gravfile>`, the :ref:`density contrast model file <modelfile>` and a :ref:`topography file <topofile>` (optional). This in shown below.
 
-Input files
------------
+.. figure:: images/run_fwd.PNG
+     :align: center
+     :width: 700
 
-All files are in ASCII text format - they can be read with any text editor. Input files can have any name the user specifies. Details for the format of each file can be found in :ref:`elements`. The files associated with GZFOR3D are:
 
-- ``mesh.msh``: The 3D :ref:`mesh <meshfile>`.
+Units
+^^^^^
 
-- ``obs.loc``: The observation :ref:`locations <gravfile>`.
+    - **Data:** gravity anomaly in mGal
+    - **Model:** density contrast model in g/cc
 
-- ``model.den``: The density contrast :ref:`model <modelfile>` in g/cc.
 
-- ``topo.dat``: Surface :ref:`topography <topofile>` (optional). If omitted, the surface will be treated as being flat and the top of the 3D mesh.
+Output Files
+^^^^^^^^^^^^
 
-Output file
------------
+The program **gzfor3d.exe** creates the following output files:
 
-The created file is ``gzfor3d.grv``. The file format is that of the :ref:`data file <gravfile>` without the associated standard deviations. The forward modelled data are in **mGal**.
+    - **gzfor3d.grv:** Predicted data file.
+
+    - **gzfor3d.log:** Log file which provides details about the parameters used in the forward modelling and diagnostic information about the results.
 

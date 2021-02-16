@@ -7,7 +7,7 @@ Here, we use **gzsen3d_60.exe** to compute the sensitivity matrix required for t
 
 Files relevant to this part of the example are in the sub-folder *inv_L2* . Before running this example, you may want to do the following:
 
-    - `Download and open the zip folder containing the entire Grav3d example <https://github.com/ubcgif/grav3d/raw/v6/assets/grav3d_v6_example.zip>`__ (if not done already)
+    - `Download and open the zip folder containing the entire grav3d example <https://github.com/ubcgif/grav3d/raw/v6/assets/grav3d_v6_example.zip>`__ (if not done already)
     - Learn how to run :ref:`gzsen3d_60.exe <grav3d_sens>` and :ref:`gzinv3d_60.exe <grav3d_inv>` from the command line
     - Learn the format of the :ref:`input file for gzsen3d_60.exe <grav3d_sens_input>` and of the :ref:`input file for gzinv3d_60.exe <grav3d_inv_input>`
 
