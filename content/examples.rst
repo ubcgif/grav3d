@@ -6,13 +6,14 @@
 Examples
 ========
 
+Grav3D v6.0 Example
+^^^^^^^^^^^^^^^^^^^
+
 
 .. figure:: images/model_sparse.png
      :align: center
      :width: 700
 
-
-**Grav3d v6.0**
 
 Here, the program libraries for Grav3d v6.0 will be used to:
 
@@ -25,7 +26,7 @@ Here, the program libraries for Grav3d v6.0 will be used to:
 
 Zip folders containing all necessary files can be downloaded here:
 
-    - `Files for grav3d v6 example <https://github.com/ubcgif/grav3d/raw/v6/assets/grav3d_v6_example.zip>`__
+    - `Files for grav3d v6 example <https://github.com/ubcgif/grav3d/raw/v6.0/assets/grav3d_v6_example.zip>`__
 
 
 The full example is parsed into 5 sections:
@@ -40,10 +41,11 @@ The full example is parsed into 5 sections:
     Sparse norm inversion <example/inv_sparse>
 
 
-**Grav3d v5.0**
+Legacy Grav3d v5.0 Example
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A legacy example using the Grav3d v5.0 package can be found here:
 
 .. toctree::
-	Legacy examples <example/old_example>
+    Legacy examples <example/old_example>
 

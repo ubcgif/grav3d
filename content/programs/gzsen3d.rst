@@ -10,7 +10,7 @@ Running the Program
 
 The sensitivity matrix file is constructed by opening a command line window and typing the path to the code **gzsen3d_60.exe**, followed by a space, followed by the path to the :ref:`input file<grav3d_sens_input>` (denoted here as **sens.inp**). Optionally, the use made also include the number of threads. The syntax is as follows.
 
-.. figure:: images/run_sens.png
+.. figure:: images/run_sens.PNG
     :align: center
     :width: 600
 

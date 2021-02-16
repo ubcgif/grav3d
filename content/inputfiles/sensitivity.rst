@@ -32,7 +32,7 @@ The lines of input file for the executable are as follows:
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
 
 
-An example of the input file for L2 inversion is shown below. You may also `Download the input file for a sparse norm inversion <https://github.com/ubcgif/grav3d/raw/v6/assets/input_files/sens_sparse.inp>`__ .
+An example of the input file for L2 inversion is shown below. You may also `Download the input file for a sparse norm inversion <https://github.com/ubcgif/grav3d/raw/v6.0/assets/input_files/sens_sparse.inp>`__ .
 
 
 .. figure:: images/sensitivity_L2_input.png

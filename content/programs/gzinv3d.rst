@@ -10,7 +10,7 @@ Running the Program
 
 The inversion is run by opening a command line window and typing the path to the code **gzinv3d_60.exe**, followed by a space, followed by the path to the :ref:`input file <grav3d_inv_input>` (denoted here as **inv.inp**). Optionally, the use made also include the number of threads. The syntax is as follows.
 
-.. figure:: images/run_inv.png
+.. figure:: images/run_inv.PNG
     :align: center
     :width: 600
 
