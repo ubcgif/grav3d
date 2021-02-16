@@ -12,8 +12,6 @@ The program library consists of the programs:
 
     - **gzfor3d.exe**: A code for forward modeling gravity anomaly data from a density contrast model model.
 
-    - **pfweight.exe:** A utility for computing depth or distance weighting for potential field inversion
-
     - **gzsen3d_60.exe**: calculates the sensitivity matrix for the inversion and outputs sensitivity weights.
 
     - **gzinv3d_60.exe**: performs 3D inversion of gravity anomaly data to recover a density contrast model.
@@ -23,6 +21,8 @@ The program library consists of the programs:
 Utility codes relevant to this package include:
 
    - **blk3cell.exe:** A utility for generating block models on tensor meshes
+
+   - **pfweight.exe:** A utility for computing depth or distance weighting for potential field inversion
 
 
 Main Input Files

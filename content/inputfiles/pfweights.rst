@@ -12,7 +12,7 @@ The lines of input file for the executable are as follows:
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
 | Line # | Description                                                        | Description                                                       |
 +========+====================================================================+===================================================================+
-| 1      | :ref:`Type<grav3d_input_weight_ln1>`                               | *MAG* or *GRAV*                                                   |
+| 1      | :ref:`Type<grav3d_input_weight_ln1>`                               | *MAG*, *GRAV* or *GG*                                             |
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
 | 2      | :ref:`Mesh file<grav3d_input_weight_ln2>`                          | mesh file                                                         |
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
@@ -22,7 +22,7 @@ The lines of input file for the executable are as follows:
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
 | 5      | :ref:`Weighting type<grav3d_input_weight_ln5>`                     | depth or distance weighting                                       |
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
-| 6      | :ref:`alpha z0<grav3d_input_weight_ln6>`                           | Weighting parameters of *null*                                    |
+| 6      | :ref:`alpha z0<grav3d_input_weight_ln6>`                           | Weighting parameters or *null*                                    |
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
 
 
@@ -61,12 +61,12 @@ Line Descriptions
 
     - **Weighting type:** An integer type specifying if depth or distance weighting is being created.
 
-        - 1: for depth weighting (not applicable to borehole data);
+        - 1: for depth weighting (not applicable to borehole data)
         - 2: for distance weighting
 
 .. _grav3d_input_weight_ln6:
 
-    - **alpha z0:** Parameters for the depth or distance weighting being applied. To see how these parameters impact the inversion and to see a default set of values, consult the theory section.
+    - **alpha z0:** Parameters for the depth or distance weighting being applied. Use the flag *null* if you would like to use standard values for the paramters. To see how these parameters impact the inversion and to see a default set of values, consult the theory section.
 
         - :ref:`theory for depth weighting<depthWeight>`
         - :ref:`theory for distance weighting<distWeight>`

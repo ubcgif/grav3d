@@ -9,7 +9,7 @@ The general format for data files compatible with **gzfor3d.exe** and **gzinv3d_
 
 .. figure:: ../../images/gravObs.png
     :align: center
-    :width: 500
+    :width: 400
 
 Parameter Definitions
 ^^^^^^^^^^^^^^^^^^^^^
@@ -20,9 +20,7 @@ Parameter Definitions
 
     - **E, N, ELEV:** Easting, Northing and elevation for each observation location in meters. Elevation should be above the topography for surface data, and below the topography for borehole data. The observation locations can be listed in any order.
 
-	-  Grav :math:`_i`: Anomalous gravity of ith datum measured in mGal.
-
-	-  :math:`\mathbf{Grav_n}`: Gravity anomaly data in mgal. This column is only present in *predicted data* and *observed data* files.
+    -  :math:`\mathbf{Grav_n}`: Gravity anomaly data in mGal. This column is only present in *predicted data* and *observed data* files.
 
     -  :math:`\mathbf{Err_n}`: Standard deviation for the error on the corresponding datum (i.e. uncertainty). This represents the absolute error. It must be positive and non-zero. This column is only required in *observed data* files.
 
@@ -31,15 +29,27 @@ Parameter Definitions
 .. important:: It should be noted that the data are **extracted anomalies**, which are derived by removing the regional from the field measurements. Furthermore, the inversion program assumes that the anomalies are produced by a density contrast distribution in g/cm :math:`^3` with mesh cells in meters. Therefore, it is crucial that the data be prepared in ``mGal``.
 
 
-Example 
--------
+Examples 
+^^^^^^^^
 
-Below is an observations file. Notice that it has columns for observed data and uncertainties.
+**Survey File:**
 
+.. figure:: ../../images/gravSurveyEx.png
+    :align: center
+    :width: 350
+
+
+**Predicted Data File:**
+
+.. figure:: ../../images/gravPreEx.png
+    :align: center
+    :width: 350
+
+
+**Observations File:**
 
 .. figure:: ../../images/gravObsEx.png
     :align: center
-    :width: 500
-
+    :width: 350
 
 
