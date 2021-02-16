@@ -3,27 +3,47 @@
 Elements of the program GRAV3D
 ==============================
 
+This section provides a brief description of each program in the GRAV3D v6.0 library. In addition, we describe the file formats for all input and supporting files used by the coding library.
+
 Introduction
 ------------
 
 The program library consists of the programs:
 
-#. **GZFOR3D**: performs forward modelling.
+    - **gzfor3d.exe**: A code for forward modeling gravity anomaly data from a density contrast model model.
 
-#. **PFWEIGHT**: calculates depth or distance weighting function.
+    - **pfweight.exe:** A utility for computing depth or distance weighting for potential field inversion
 
-#. **GZSEN3D**: calculates sensitivity for the inversion.
+    - **gzsen3d_60.exe**: calculates the sensitivity matrix for the inversion and outputs sensitivity weights.
 
-#. **GZINV3D**: performs 3D gravity inversion.
+    - **gzinv3d_60.exe**: performs 3D inversion of gravity anomaly data to recover a density contrast model.
 
-#. **GZPRE3D**: multiplies the sensitivity file by the model to get the predicted data. This rarely used utility multiplies a model by the sensitivity matrix in to produce the predicted data. This program is included so that users who are not familiar with the wavelet transform and the structure of can utilize the available sensitivity matrix to carry out model studies.
+    - **gzpre3d.exe**: multiplies the sensitivity file by the model to get the predicted data. This rarely used utility multiplies a model by the sensitivity matrix in to produce the predicted data. This program is included so that users who are not familiar with the wavelet transform and the structure of can utilize the available sensitivity matrix to carry out model studies.
 
-Each of the above programs requires input files and the specification of parameters in order to run. However, some files are used by a number of programs. Before detailing the procedures for running each of the above programs, we first present information about these general files.
+Utility codes relevant to this package include:
+
+   - **blk3cell.exe:** A utility for generating block models on tensor meshes
+
+
+Main Input Files
+----------------
+
+Here, we describe the main input files for executables contained with the GRAV3D v6.0 coding package.
+
+.. toctree::
+    :maxdepth: 1
+
+    Create Model <inputfiles/createModel>
+    Forward Modeling <inputfiles/forward>
+    Depth/Distance Weighting <inputfiles/pfweights>
+    Sensitivity Matrix <inputfiles/sensitivity>
+    Inversion <inputfiles/inversion>
+
 
 General files for GRAV3D programs
 ---------------------------------
 
-There are seven general files which are used in GRAV3D. All are in ASCII text format. Input files can have any user-defined name. *Program output files have restricted file names that will be over-written if already in the directory*. Also the filename extensions are not important. Many prefer to use the filename convention so that files are more easily read and edited in the Windows environment. File and file locations may have spaces in the name or path, but it is discouraged. The file name (absolute or relative path) must be 500 characters or less in length. The files contain components of the inversion:
+Here, we describe the formats of supplementary files used to run GRAV3D v6.0.
 
 .. toctree::
     :maxdepth: 1

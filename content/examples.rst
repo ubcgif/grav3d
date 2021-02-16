@@ -30,8 +30,8 @@ The full example is parsed into 5 sections:
     Create tensor model <example/create_model>
     Forward modeling <example/fwd>
     Weights <example/weights>
-    Generate sensitivity matrix <example/sensitivity>
-    Inversion <example/inv>
+    Least-squares inversion <example/inv_L2>
+    Sparse norm inversion <example/inv_sparse>
 
 
 **Grav3d v5.0**

@@ -142,8 +142,8 @@ If the data set involves highly variable observation heights the normal depth we
 
 .. _distWeight:
 
-Distance weighting for borehole data
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Distance weighting for borehole or airborne data
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For data sets that contain borehole measurements, the sensitivities do not have a predominant decay direction, therefore a weighting function that varies in three dimensions is needed. We generalize the depth weighting used in surface data inversion to form such a 3D weighting function called distance weighting: 
 

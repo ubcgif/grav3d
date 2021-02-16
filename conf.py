@@ -40,8 +40,10 @@ extensions = [
     # 'example',
 ]
 
+bibtex_bibfiles = ['reference.bib']
+
 # Number figures
-numfig = True
+numfig = False
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

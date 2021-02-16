@@ -1,10 +1,23 @@
 .. _overview:
 
-GRAV3D package overview
-=======================
+GRAV3D v6.0 Package Overview
+============================
 
-Description
------------
+Highlights of v6.0
+------------------
+
+Many advancements have been made since the previous version of this coding package.
+Highlights of Grav3D v6.0 include:
+
+
+    - the ability to forward model and invert surface, borehole, and airborne gravity data in 3D
+    - sensitivity weighting so that targets recovered through inversion are placed at the correct depth
+    - the ability to recover compact and/or blocky models using sparse norms, in additional to smooth models using a standard least-squares approach
+    - implementing wavelet compression to reduce the storage cost of the sensitivity matrix and allow the user to solve larger problems
+
+
+General Code Description
+------------------------
 
 GRAV3D is a program library for carrying out forward modelling and inversion
 of surface and airborne gravity data over 3D structures. The program
@@ -65,13 +78,21 @@ Program library content
 Executable programs
 ^^^^^^^^^^^^^^^^^^^
 
-This package consists of five major programs:
+The program library consists of the programs:
 
-   - PFWEIGHT: calculates the depth/distance weighting function
-   - GZFOR3D: performs forward modelling
-   - GZSEN3D: calculates the sensitivity matrix
-   - GZPRE3D: multiplies the sensitivity file by the model to get the predicted data
-   - GZINV3D: performs 3D gravity inversion
+    - **gzfor3d.exe**: A code for forward modeling gravity anomaly data from a density contrast model model.
+
+    - **pfweight.exe:** A utility for computing depth or distance weighting for potential field inversion
+
+    - **gzsen3d_60.exe**: calculates the sensitivity matrix for the inversion and outputs sensitivity weights.
+
+    - **gzinv3d_60.exe**: performs 3D inversion of gravity anomaly data to recover a density contrast model.
+
+    - **gzpre3d.exe**: multiplies the sensitivity file by the model to get the predicted data. This rarely used utility multiplies a model by the sensitivity matrix in to produce the predicted data. This program is included so that users who are not familiar with the wavelet transform and the structure of can utilize the available sensitivity matrix to carry out model studies.
+
+Utility codes relevant to this package include:
+
+   - **blk3cell.exe:** A utility for generating block models on tensor meshes
 
 Graphical user interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -121,28 +142,6 @@ Two additional notes about installation:
 
 -  A Message Pass Interface (MPI) version is available for Linux upon
    and the installation instructions will accompany the code.
-
-Highlights of changes from version 5.0
---------------------------------------
-
-The principal upgrades, described below, allow the new code to take advantage of current multi-core computers and also provide greater flexibility to incorporate the geological information.
-
-Improvements since the previous version:
-
-#. A new projected gradient algorithm is used to implement hard
-   constraints.
-
-#. Fully parallelized computational capability (for both sensitivity matrix calculations and inversion calculations).
-
-#. A facility to have active and inactive (i.e. fixed) cells.
-
-#. Bounds are be specified through two separate files, rather than one two-column file.
-
-#. Additional flexibility for incorporating the reference model in the model objective function facilitates the generation of smooth models when borehole constraints are incorporated.
-
-#. The ``gzinv3d.log`` file has been simplified and detailed information on the inversion can be found in the ``gzinv3d.out`` file.
-
-#. Backward compatibility: The new version has changed the input file format and the bounds file. Data, mesh, model, and topographic file formats have not changed.
 
 Notes on computation speed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
