@@ -10,7 +10,7 @@ Grav3D v6.0 Example
 ^^^^^^^^^^^^^^^^^^^
 
 
-.. figure:: images/model_sparse.png
+.. figure:: example/images/model_sparse.png
      :align: center
      :width: 700
 
