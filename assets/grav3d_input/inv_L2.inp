@@ -9,7 +9,7 @@ VALUE -10.                       ! lower bound
 VALUE 10.                        ! upper bound
 1e-4 1. 1. 1.                    ! alphaS alphaE alphaN alphaZ | null
 SMOOTH_MOD                       ! SMOOTH_MOD | SMOOTH_MOD_DIF
-null                             ! depth or distance weights | null
+null                             ! additional weights | null
 null                             ! ps px py pz | null
 null                             ! Lq scaling [0,1], zeroS, zeroXYZ | null
 null                             ! MOF derivatives | null
