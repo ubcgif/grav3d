@@ -9,7 +9,7 @@ GRAV3D v6.0 package
 GRAV3D v6.0 is a program library for carrying out 3D forward modelling and inversion of gravity data.
 
 
-.. figure:: images/title_image.png
+.. figure:: images/title_image.PNG
      :align: center
      :width: 700
 
