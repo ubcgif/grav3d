@@ -32,7 +32,7 @@ An example of the input file for creating weights is shown below.
      :align: center
      :width: 700
 
-     Example input file for creating distance weighting (`Download <https://github.com/ubcgif/grav3d/raw/v6.0/assets/input_files/inv/sens_L2.inp>`__ ).
+     Example input file for creating distance weighting (`Download <https://github.com/ubcgif/grav3d/raw/v6.0/assets/grav3d_input/pfweight.inp>`__ ).
 
 
 Line Descriptions

@@ -1,7 +1,7 @@
 .. _elements:
 
-Elements of the program GRAV3D
-==============================
+Elements of the Grav3d v6.0 Package
+===================================
 
 This section provides a brief description of each program in the GRAV3D v6.0 library. In addition, we describe the file formats for all input and supporting files used by the coding library.
 

@@ -9,11 +9,11 @@ GRAV3D v6.0 package
 GRAV3D v6.0 is a program library for carrying out 3D forward modelling and inversion of gravity data.
 
 
-.. figure:: content/example/images/model_sparse.png
+.. figure:: images/title_image.png
      :align: center
      :width: 700
 
-     True model and recovered models using least-squares and sparse-norm inversion.
+     True model, gravity anomaly data and the recovered model.
 
 
 **Highlights of Grav3D v6.0**

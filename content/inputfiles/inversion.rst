@@ -41,14 +41,14 @@ The lines of input file for **maginv3d_60.exe** are as follows:
 | 15     | :ref:`MOF derivatives<grav3d_input_inv_ln15>`                      | Set as *null* for the time-being                                  |
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
 
-An example of the input file for L2 inversion is shown below. You may also `Download the input file for a sparse norm inversion <https://github.com/ubcgif/grav3d/raw/v6.0/assets/input_files/inv_sparse.inp>`__ .
+An example of the input file for L2 inversion is shown below. You may also `Download the input file for a sparse norm inversion <https://github.com/ubcgif/grav3d/raw/v6.0/assets/grav3d_input/inv_sparse.inp>`__ .
 
 
 .. figure:: images/inv_L2_input.png
      :align: center
      :width: 700
 
-     Example input file for the inversion (`Download <https://github.com/ubcgif/grav3d/raw/v6.0/assets/input_files/inv_L2.inp>`__ ).
+     Example input file for the inversion (`Download <https://github.com/ubcgif/grav3d/raw/v6.0/assets/grav3d_input/inv_L2.inp>`__ ).
 
 
 Line Descriptions
