@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-GRAV3D package
-==============
+GRAV3D 5.0 Package
+==================
 
-GRAV3D is a program library for carrying out forward modelling and inversion of surface, borehole, and airborne gravity data in 3D. The contents of this manual are as follows:
+GRAV3D v5.0 is a program library for carrying out forward modelling and inversion of surface, borehole, and airborne gravity data in 3D. The contents of this manual are as follows:
 
 .. toctree::
     :numbered:
@@ -18,10 +18,6 @@ GRAV3D is a program library for carrying out forward modelling and inversion of 
     Running the programs <content/runPrograms>
     Examples <content/examples>    
     References <references>
-    
 
-..    File formats <content/elements>
-..    Running the programs <content/run>
-..    Examples <content/examples>
 
 

@@ -1,7 +1,7 @@
 Running the programs
 ====================
 
-The software package GRAV3D uses five general codes:
+The software package GRAV3D v5.0 uses five general codes:
 
 - ``GZFOR3D``: performs forward modelling.
 

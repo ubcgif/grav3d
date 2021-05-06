@@ -1,5 +1,5 @@
-Elements of the program GRAV3D
-==============================
+Elements of GRAV3D v5.0 Program Library
+=======================================
 
 Introduction
 ------------
