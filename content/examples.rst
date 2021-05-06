@@ -6,10 +6,6 @@
 Examples
 ========
 
-Grav3D v6.0 Example
-^^^^^^^^^^^^^^^^^^^
-
-
 .. figure:: example/images/model_sparse.png
      :align: center
      :width: 700
@@ -39,13 +35,3 @@ The full example is parsed into 5 sections:
     Weights <example/weights>
     Least-squares inversion <example/inv_L2>
     Sparse norm inversion <example/inv_sparse>
-
-
-Legacy Grav3d v5.0 Example
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-A legacy example using the Grav3d v5.0 package can be found here:
-
-.. toctree::
-    Legacy examples <example/old_example>
-
