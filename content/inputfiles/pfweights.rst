@@ -4,7 +4,7 @@ PF Weights
 ==========
 
 Gravity inversion has a tendancy place anomalous bodies near the observation locations due to high sensitivities.
-The executable **pfweight.exe** creates a depth-based or distance based weighting to counteract these effects.
+The executable **pfweight_60.exe** creates a depth-based or distance based weighting to counteract these effects.
 The lines of input file for the executable are as follows:
 
 .. tabularcolumns:: |L|C|C|

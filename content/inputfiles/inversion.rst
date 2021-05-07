@@ -3,7 +3,7 @@
 Inversion Input File
 ====================
 
-The lines of input file for **maginv3d_60.exe** are as follows:
+The lines of input file for **gzinv3d_60.exe** are as follows:
 
 .. tabularcolumns:: |L|C|C|
 

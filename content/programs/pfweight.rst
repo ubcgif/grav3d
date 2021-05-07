@@ -3,12 +3,12 @@
 Depth/Distance Weighting
 ========================
 
-The program **pfweight.exe** create the depth or distance weighting that is to be used in the inversion. 
+The program **pfweight_60.exe** create the depth or distance weighting that is to be used in the inversion. 
 
 Running the Program
 ^^^^^^^^^^^^^^^^^^^
 
-The weights are constructed by opening a command line window and typing the path to the code **pfweight.exe**, followed by a space, followed by the path to the :ref:`input file<grav3d_weight_input>` (denoted here as **pfweight.inp**). Optionally, the use made also include the number of threads. The syntax is as follows.
+The weights are constructed by opening a command line window and typing the path to the code **pfweight_60.exe**, followed by a space, followed by the path to the :ref:`input file<grav3d_weight_input>` (denoted here as **pfweight.inp**). Optionally, the use made also include the number of threads. The syntax is as follows.
 
 
 .. figure:: images/run_pfweight.PNG

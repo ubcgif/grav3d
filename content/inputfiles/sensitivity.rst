@@ -5,7 +5,7 @@ Sensitivity Matrix Input File
 
 Before running the inversion, we must construct the sensitivity matrix.
 The sensitivity matrix defines the linear relationship between the data and model.
-The sensitivity matrix is computed using the program **magsen3d_60.exe**, see :ref:`running the program <grav3d_sens>`.
+The sensitivity matrix is computed using the program **gzsen3d_60.exe**, see :ref:`running the program <grav3d_sens>`.
 
 The lines of input file for the executable are as follows:
 

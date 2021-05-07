@@ -3,8 +3,6 @@
 Inversion Program
 =================
 
-The inversion is carried out using the executable *gzinv3d_60.exe**.
-
 Running the Program
 ^^^^^^^^^^^^^^^^^^^
 

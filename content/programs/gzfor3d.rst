@@ -3,12 +3,12 @@
 Forward Modeling
 ================
 
-The program **gzfor3d.exe** performs the 3D forward modelling of gravity data for a density contrast model defined on a tensor mesh.
+The program **gzfor3d_60.exe** performs the 3D forward modelling of gravity data for a density contrast model defined on a tensor mesh.
 
 Running the Program
 ^^^^^^^^^^^^^^^^^^^
 
-To run the executable, open a command window. In order, enter the path to the *gzfor3d* executable, the :ref:`tensor mesh file <meshfile>`, the :ref:`survey file <gravfile>`, the :ref:`density contrast model file <modelfile>` and a :ref:`topography file <topofile>` (optional). This in shown below.
+To run the executable, open a command window. In order, enter the path to the *gzfor3d_60* executable, the :ref:`tensor mesh file <meshfile>`, the :ref:`survey file <gravfile>`, the :ref:`density contrast model file <modelfile>` and a :ref:`topography file <topofile>` (optional). This in shown below.
 
 .. figure:: images/run_fwd.PNG
      :align: center
@@ -25,7 +25,7 @@ Units
 Output Files
 ^^^^^^^^^^^^
 
-The program **gzfor3d.exe** creates the following output files:
+The program **gzfor3d_60.exe** creates the following output files:
 
     - **gzfor3d.grv:** Predicted data file.
 
