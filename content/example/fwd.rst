@@ -4,7 +4,7 @@
 Forward Modeling
 ================
 
-Here the code **gzfor3d.exe** is used to forward model the gravity anomaly for the mesh and density contrast model provided. We consider a ground-based survey with a uniform station spacing of 40 m.
+Here the code **gzfor3d_60.exe** is used to forward model the gravity anomaly for the mesh and density contrast model provided. We consider a ground-based survey with a uniform station spacing of 40 m.
 
 Files relevant to this part of the example are in the sub-folder *fwd*. We used the same model that was created in the :ref:`create model <example_model>` section. Before running this example, you may want to do the following:
 
