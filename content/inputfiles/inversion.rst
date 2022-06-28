@@ -82,11 +82,11 @@ Line Descriptions
 
 .. _grav3d_input_inv_ln5:
 
-    - **Initial model:** The initial susceptibility model (SI) can be defined as a value for uniform models (e.g. *VALUE 0.001*), or by a filename. The initial model must be within the upper and lower bounds.
+    - **Initial model:** The initial density contrast model (g/cc) can be defined as a value for uniform models (e.g. *VALUE 0.001*), or by a filename. The initial model must be within the upper and lower bounds.
 
 .. _grav3d_input_inv_ln6:
 
-    - **Reference model:** The reference susceptibility model (SI) can be defined as a value for uniform models (e.g. *VALUE 0*), or by a filename (for non-uniform reference models).
+    - **Reference model:** The reference model (g/cc) can be defined as a value for uniform models (e.g. *VALUE 0*), or by a filename (for non-uniform reference models).
 
 .. _grav3d_input_inv_ln7:
 
