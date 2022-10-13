@@ -1,12 +1,9 @@
-.. GIFtoolsCookbook documentation master file, created by
-   sphinx-quickstart on Wed Oct 28 13:40:17 2015.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. important:: In 2022-10, a more exact definition of the regularization was implemented in grav3dinv_60.exe for sparse-norm inversion. The package containing the improved executable was released as GRAV3D v6.0.1. Be aware that GRAV3D v6.0 and v6.0.1 have all the same features and use the same executable names. Differences in the recovered model using each package were found to be insignificant.
 
-GRAV3D v6.0 package
-===================
+GRAV3D v6.0/v6.0.1 package
+==========================
 
-GRAV3D v6.0 is a program library for carrying out 3D forward modelling and inversion of gravity data.
+GRAV3D v6.0/v6.0.1 is a program library for carrying out 3D forward modelling and inversion of gravity data.
 
 
 .. figure:: images/title_image.PNG
@@ -16,11 +13,11 @@ GRAV3D v6.0 is a program library for carrying out 3D forward modelling and inver
      True model, gravity anomaly data and the recovered model.
 
 
-Highlights of Grav3D v6.0
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Highlights of Grav3D v6.0/v6.0.1
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Many advancements have been made since the previous version of this coding package.
-Highlights of Grav3D v6.0 include:
+Highlights of Grav3D v6.0/v6.0.1 include:
 
 
     - the ability to forward model and invert surface, borehole, and airborne gravity data in 3D
