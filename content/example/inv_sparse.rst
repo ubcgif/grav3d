@@ -19,6 +19,8 @@ Sensitivities
 
 .. note:: If using GRAV3D v6.0.2, the last line in the input file is unused and the sensitivity matrix can be used for the L2 inversion can be reused for sparse-norm inversion.
 
+.. note:: If using GRAV3D v6.0.2, a larger value of *eps* (e.g. 0.05) can generally be used for the wavelet compression. That is because the wavelet compression is acting on sensitivities after distance weighting has been applied, not before
+
 Here, the code **gzsen3d_60.exe** and the input file **sens.inp** (:ref:`see format <grav3d_sens_input>` ) are used to construct the sensitivity matrix and scale it using distance weighting. The distance weighting is applied to the sensitivity matrix to counteract the inversion's natural tendancy to incorrectly place anomalous structures near the observation locations. 
 
 To compute the sensitivities, the following input file was used. Since we are no longer performed an least-squares inversion, a flag of *0* must be entered on the last line of the input file.

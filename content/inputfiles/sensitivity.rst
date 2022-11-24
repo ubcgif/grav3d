@@ -84,6 +84,10 @@ Line Descriptions
             - *itol=1:* the program calculates the relative threshold and *eps* is the relative reconstruction error of the sensitivity. A reconstruction error of *eps* = 0.05 (95%) is usually adequate.
             - *itol=2:* the user defines the threshold level and *eps* is the threshold to be used.
 
+
+.. note:: If using GRAV3D v6.0.2, a larger value of *eps* (e.g. 0.05) can generally be used for the wavelet compression. That is because the wavelet compression is acting on sensitivities after distance weighting has been applied, not before
+
+
 .. _grav3d_input_sens_ln7:
 
     - **Output diagnostic options:**
