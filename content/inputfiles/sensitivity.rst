@@ -28,7 +28,7 @@ The lines of input file for the executable are as follows:
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
 | 7      | :ref:`Output diagnostic options<grav3d_input_sens_ln7>`            | 0 (no) or 1 (yes)                                                 |
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
-| 8      | :ref:`Scale sensitivity options<grav3d_input_sens_ln8>`            | scale for L2 or sparse inversion                                  |
+| 8      | :ref:`Scale sensitivity options<grav3d_input_sens_ln8>`            | scale for L2 or sparse inversion (ignored in v6.0.2 and later)    |
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
 
 
@@ -93,7 +93,7 @@ Line Descriptions
 
 .. _grav3d_input_sens_ln8:
 
-    - **Scale sensitivity options:** 
+    - **Scale sensitivity options (ignored in v6.0.2 and later):** 
 
         - *1* - Scale sensitivity by the distance weighting function. This is used when performing an L2 inversion. 
         - *0* - Scale the model objective function by the distance weighting. This option **must** be used when using compact or blocky norms.

@@ -1,5 +1,7 @@
 .. _example_inv_sparse:
 
+.. note:: The latest example has been generated using GRAV3D v6.0.2. The exercise can be completed using previous versions. However some functionality has been added since v5.0, and improvements in performance since v6.0 and v6.0.1 may result in slightly different recovered models.
+
 Sparse Norm Inversion
 =====================
 
@@ -14,6 +16,8 @@ Files relevant to this part of the example are in the sub-folder *inv_sparse* . 
 
 Sensitivities
 -------------
+
+.. note:: If using GRAV3D v6.0.2, the last line in the input file is unused and the sensitivity matrix can be used for the L2 inversion can be reused for sparse-norm inversion.
 
 Here, the code **gzsen3d_60.exe** and the input file **sens.inp** (:ref:`see format <grav3d_sens_input>` ) are used to construct the sensitivity matrix and scale it using distance weighting. The distance weighting is applied to the sensitivity matrix to counteract the inversion's natural tendancy to incorrectly place anomalous structures near the observation locations. 
 
