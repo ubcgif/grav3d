@@ -1,11 +1,11 @@
 .. _running:
 
-.. important:: In 2022-10, a more exact definition of the regularization was implemented in gzinv3d_60.exe for sparse-norm inversion. The package containing the improved executable was released as GRAV3D v6.0.1. Be aware that GRAV3D v6.0 and v6.0.1 have all the same features and use the same executable names. Differences in the recovered model using each package were found to be insignificant.
+.. important:: The features and executable names within the GRAV3D the v6.0, v6.0.1 and v6.0.2 packages remain the same. Differences in version number correspond to improvements in performance.
 
 Running the programs
 ====================
 
-This section provides describes how to run all executables pertaining to the GRAV3D package.
+This section provides describes how to run all executables pertaining to the GRAV3D v6 package.
 
 .. note::
 

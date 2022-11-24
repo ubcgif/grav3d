@@ -1,6 +1,6 @@
 .. _example:
 
-.. note:: A new example has been developed for demonstrating functionality specific to v6.0/v6.0.1. The example can be completed using v5.0, however some functionality may not exist in v5.0 and the format of certain input files may differ slightly.
+.. note:: A new example has been developed for demonstrating GRAV3D v6.0.2. The example can be completed using previous versions. However some functionality has been added since v5.0, and improvements in performance since v6.0 and v6.0.1 may result in slightly different recovered models.
 
 Examples
 ========
@@ -10,7 +10,7 @@ Examples
      :width: 700
 
 
-Here, the program libraries for Grav3d v6.0/v6.0.1 will be used to:
+Here, the program libraries for GRAV3D v6.0.2 will be used to:
 
     - define a density contrast model on a tensor mesh
     - predict gravity anomaly data for a synthetic density contrast model
