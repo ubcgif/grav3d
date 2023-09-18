@@ -1,4 +1,4 @@
-.. important:: The features and executable names within the GRAV3D the v6.0, v6.0.1 and v6.0.2 packages remain the same. Differences in version number correspond to improvements in performance and computational efficiency.
+.. important:: The features and executable names within the GRAV3D the v6.0, v6.0.1, v6.0.2 and v6.0.3 packages remain the same. Differences in version number correspond to improvements in performance and computational efficiency.
 
 
 GRAV3D v6 Package
@@ -40,6 +40,10 @@ Highlights
     - general sensitivities that can be used for least-squares or sparse-norm inversion
     - improved wavelet compression which acts on weighted sensitivities
     - update preconditionner during IRLS iterations to reduce number of conjugate gradient solves
+
+**v6.0.3 Highlights:**
+
+   -  an augmentation was made to preserve high performance for extremely large problems.
 
 
 Sponsorship
