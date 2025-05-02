@@ -90,7 +90,7 @@ Line Descriptions
 
 .. _grav3d_input_inv_ln7:
 
-    - **Active cells:** Use the flag *null* if all cells below the surface topography are active in the inversion. Or provide the filepath to an :ref:`active model file <activeFile>` to define the active cells.
+    - **Active cells:** Use the flag *null* if all cells below the surface topography are active in the inversion. Or provide the filepath to an :ref:`active model file <activeFile>` to define the active cells. WARNING: For versions 6.0.3 and below, some unintended behavior was observed in the sparse norm inversion when an active cells file is used in the inversion input file. This issue is corrected in v6.0.4.
 
 .. _grav3d_input_inv_ln8:
 
