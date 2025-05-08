@@ -1,6 +1,6 @@
 .. _overview:
 
-.. important:: The features and executable names within the GRAV3D the v6.0, v6.0.1, v6.0.2 and v6.0.3 packages remain the same. Differences in version number correspond to improvements in performance and computational efficiency.
+.. important:: The features and executable names within the GRAV3D the v6.0, v6.0.1, v6.0.2, v6.0.3 and v6.0.4 packages remain the same. Differences in version number correspond to improvements in performance and computational efficiency.
 
 GRAV3D v6 Package Overview
 ==========================
@@ -15,27 +15,31 @@ Highlights
     - implementing wavelet compression to reduce the storage cost of the sensitivity matrix and allow the user to solve larger problems
 
 
-**v6.0 Highlights:**
+**v6.0 (released 2021-05):**
 
     - the ability to forward model and invert both total magnetic intensity and amplitude data
     - the ability to recover compact and/or blocky models using sparse norms, in additional to smooth models using a standard least-squares approach
 
 
-**v6.0.1 Highlights:**
+**v6.0.1 (released 2022-10):**
 
     - implementation of a more exact definition for the regularization 
 
 
-**v6.0.2 Highlights:**
+**v6.0.2 (released 2022-11):**
 
     - general sensitivities that can be used for least-squares or sparse-norm inversion
     - improved wavelet compression which acts on weighted sensitivities
     - update preconditionner during IRLS iterations to reduce number of conjugate gradient solves
 
 
-**v6.0.3 Highlights:**
+**v6.0.3 (released 2023-09):**
 
     -  an augmentation was made to preserve high performance for extremely large problems.
+
+**v6.0.4 (released 2025-04):**
+
+    - some unintended behavior was observed in the sparse norm inversion when an active cells file is used in the inversion input file. This issue is corrected in v6.0.4.
 
 
 General Code Description
