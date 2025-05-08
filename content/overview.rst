@@ -17,7 +17,6 @@ Highlights
 
 **v6.0 (released 2021-05):**
 
-    - the ability to forward model and invert both total magnetic intensity and amplitude data
     - the ability to recover compact and/or blocky models using sparse norms, in additional to smooth models using a standard least-squares approach
 
 
