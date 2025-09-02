@@ -24,9 +24,9 @@ The lines of input file for **gzinv3d_60.exe** are as follows:
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
 | 7      | :ref:`Active model<grav3d_input_inv_ln7>`                          | sets active cells in inversion                                    |
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
-| 8      | :ref:`Upper bounds<grav3d_input_inv_ln8>`                          | upper bounds for cells                                            |
+| 8      | :ref:`Lower bounds<grav3d_input_inv_ln8>`                          | lower bounds for cells                                            |
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
-| 9      | :ref:`Lower bounds<grav3d_input_inv_ln9>`                          | lower bounds for cells                                            |
+| 9      | :ref:`Upper bounds<grav3d_input_inv_ln9>`                          | upper bounds for cells                                            |
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
 | 10     | :ref:`alpha_s alpha_x alpha_y alpha_z<grav3d_input_inv_ln10>`      | weighting constants for smallness and smoothness constraints      |
 +--------+--------------------------------------------------------------------+-------------------------------------------------------------------+
